@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayla Rovir - IT Professional Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>GR</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- About/Profile Section -->
+        <section id="about" class="section about-section">
+            <div class="about-content">
+                <div class="profile-image-container">
+                    <img src="assets/profile.png" alt="Gayla Rovir - IT Professional" class="profile-image">
+                </div>
+                <div class="about-text">
+                    <h2>Gayla Rovir</h2>
+                    <h3 class="role">Full-Stack Web Developer & IT Professional</h3>
+                    <p class="bio">
+                        Passionate IT student specializing in full-stack web development and modern technologies. 
+                        Experienced in building responsive, interactive web applications using HTML5, CSS3, JavaScript, 
+                        and jQuery. Dedicated to creating elegant solutions and staying current with industry trends.
+                    </p>
+                    <div class="quick-info">
+                        <p><strong>Email:</strong> gayla.rovir@example.com</p>
+                        <p><strong>Phone:</strong> (555) 123-4567</p>
+                        <p><strong>Location:</strong> San Francisco, CA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="card-header">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <p class="institution">Tech University</p>
+                    </div>
+                    <p class="dates">Expected Graduation: May 2026</p>
+                    <p class="gpa">GPA: 3.8/4.0</p>
+                    <p class="details">
+                        Relevant Coursework: Web Systems & Technologies, Database Management, 
+                        Software Engineering, Cloud Computing, Data Structures
+                    </p>
+                </div>
+
+                <div class="education-card">
+                    <div class="card-header">
+                        <h3>Certifications & Training</h3>
+                        <p class="institution">Online Learning Platforms</p>
+                    </div>
+                    <ul class="cert-list">
+                        <li>Google Cloud Associate Cloud Engineer (2025)</li>
+                        <li>AWS Solutions Architect Associate (2024)</li>
+                        <li>Oracle JavaScript Developer (2025)</li>
+                        <li>React & Advanced Web Development Specialization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h2>Technical Skills</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">🎨</div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Semantic HTML, responsive design, CSS Grid, Flexbox</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                    <span class="skill-level">95%</span>
+                </div>
+
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript & jQuery</h3>
+                    <p>ES6+, DOM manipulation, AJAX, event handling</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                    <span class="skill-level">88%</span>
+                </div>
+
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React & Vue.js</h3>
+                    <p>Component architecture, state management, hooks</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 82%"></div>
+                    </div>
+                    <span class="skill-level">82%</span>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>Node.js & Express</h3>
+                    <p>RESTful APIs, middleware, authentication, deployment</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-level">85%</span>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <p>MySQL, MongoDB, PostgreSQL, Firebase</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-level">80%</span>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Dev Tools</h3>
+                    <p>Git, GitHub, VS Code, Chrome DevTools, Webpack</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-level">90%</span>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & Deployment</h3>
+                    <p>AWS, Google Cloud, GitHub Pages, Heroku, Netlify</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 83%"></div>
+                    </div>
+                    <span class="skill-level">83%</span>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python & Data</h3>
+                    <p>Data analysis, automation, web scraping, pandas</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 78%"></div>
+                    </div>
+                    <span class="skill-level">78%</span>
+                </div>
+            </div>
+
+            <div class="skill-action">
+                <button id="animateSkills" class="btn-primary">Animate Skills</button>
+            </div>
+        </section>
+
+        <!-- Projects/Portfolio Section -->
+        <section id="projects" class="section projects-section">
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Showcase of recent web development work</p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🌐</div>
+                        <h3>E-Commerce Platform</h3>
+                    </div>
+                    <p class="project-description">
+                        Full-stack e-commerce application built with React, Node.js, and MongoDB. 
+                        Features include product catalog, shopping cart, user authentication, and payment integration.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-date">2025</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📱</div>
+                        <h3>Weather Dashboard App</h3>
+                    </div>
+                    <p class="project-description">
+                        Responsive weather application using OpenWeather API. Displays real-time weather, 
+                        5-day forecast, and interactive maps with location-based search.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">CSS Grid</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-date">2025</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">💬</div>
+                        <h3>Social Chat Application</h3>
+                    </div>
+                    <p class="project-description">
+                        Real-time chat application with WebSocket integration. Supports group messaging, 
+                        user profiles, notifications, and message history.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-date">2024</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <h3>Data Visualization Dashboard</h3>
+                    </div>
+                    <p class="project-description">
+                        Interactive analytics dashboard with Chart.js and D3.js. Visualizes business metrics, 
+                        trends, and allows data filtering and export to CSV.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-date">2024</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎮</div>
+                        <h3>Interactive Game Portal</h3>
+                    </div>
+                    <p class="project-description">
+                        Collection of browser-based games built with vanilla JavaScript. 
+                        Features include leaderboards, difficulty levels, and responsive design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Canvas API</span>
+                        <span class="tech-tag">LocalStorage</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-date">2024</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🔐</div>
+                        <h3>Password Manager PWA</h3>
+                    </div>
+                    <p class="project-description">
+                        Progressive Web App for secure password management with encryption. 
+                        Offline functionality, biometric authentication, and cloud sync.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PWA</span>
+                        <span class="tech-tag">Encryption</span>
+                        <span class="tech-tag">Service Worker</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-date">2024</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section with Form -->
+        <section id="contact" class="section contact-section">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">I'd love to hear from you. Let's collaborate!</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>gayla.rovir@example.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="socials">
+                            <a href="#" title="GitHub">GitHub</a>
+                            <a href="#" title="LinkedIn">LinkedIn</a>
+                            <a href="#" title="Twitter">Twitter</a>
+                            <a href="#" title="Portfolio">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Gayla Rovir. All rights reserved. | IT 223 Performance Task</p>
+        <p class="footer-note">Built with HTML5, CSS3, JavaScript & jQuery</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
